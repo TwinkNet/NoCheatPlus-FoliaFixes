@@ -529,7 +529,7 @@ public class RichEntityLocation extends RichBoundsLocation {
             return onGround;
         }
         final double d1 = 0.25;
-        if (blockCache.standsOnEntity(entity, minX - d1, minY - yOnGround, minZ - d1, maxX + d1, minY, maxZ + d1)) {
+        if (blockCache.standsOnEntity( entity, minX - d1, minY - yOnGround, minZ - d1, maxX + d1, minY, maxZ + d1)) {
             // On ground due to an entity
             // TODO: Again, this check needs to be refined to be as close as possible to vanilla. With prediction, we cannot use a leniency magic value.
             onGround = standsOnEntity = true;
